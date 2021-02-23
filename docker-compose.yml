@@ -8,6 +8,8 @@ services:
       - backend
     volumes:
       - ${DB_DATA}:/var/lib/mysql
+    ports:
+      - "3306:3306"
   web:
     image: kinnaradigitalstudio/kecak-workflow:${WFLOW_IMAGE_TAG}
     depends_on:
