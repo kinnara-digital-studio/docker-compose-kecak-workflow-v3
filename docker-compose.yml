@@ -8,8 +8,8 @@ services:
       - backend
     volumes:
       - ${DB_DATA}:/var/lib/mysql
-    ports:
-      - "3306:3306"
+        #    ports:
+        #      - "3306:3306"
   web:
     image: kinnaradigitalstudio/kecak-workflow:${WFLOW_IMAGE_TAG}
     depends_on:
@@ -27,7 +27,7 @@ services:
       - ${WFLOW_LOGS}:/usr/local/tomcat/logs
     ports:
       # application port
-      - "8080:8080"
+      #      - "8080:8080"
 
       # debugging port
       - "8000:${TOMCAT_DEBUG_PORT}"
