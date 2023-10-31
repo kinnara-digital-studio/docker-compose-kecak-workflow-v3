@@ -7,17 +7,17 @@ Easiest way to run Kecak Workflow out of the box
 # Deployment
 Clone this project
 ```
-git clone git@github.com:kinnara-digital-studio/docker-compose-kecak-workflow.git
+git clone git@github.com:kinnara-digital-studio/docker-compose-kecak-workflow-v3.git
 ```
 
 Navigate to project's folder
 ```
-cd docker-compose-kecak-workflow
+cd docker-compose-kecak-workflow-v3
 ```
 
 Run Docker Compose
 ```
-docker-compose up
+docker compose up
 ```
 
 # Debugging
